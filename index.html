@@ -74,20 +74,48 @@
           </h1>
           <button type="button" class="hero-button"data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal"><button data-modal-close>
+          <div class="modal">
+            <button data-modal-close>
             <div class="bnt-styles">
             <svg class="hero-bnt-close">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
-            <div>
-              <form>
-                <label>Имя
-                <input type="text" name="user-name" />
-                </label>
+            </div>
+          </button>
+          <div>
+              <form class="form-hero">
+                <h3 class="form-hero-title">Оставьте свои данные, мы вам перезвоним</h3>
+                <div class="form-hero-field">
+                  <label for="user-name" class="form-hero-label">Имя</label>
+                  <input class="form-hero-input" type="text" name="user-name" id="user-name" 
+                  />
+                  <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-persona"></use>
+                    </svg>
+                 
+                </div>
+                <div class="form-hero-field"> 
+                  <label for="tel" class="form-hero-label">Телефон</label>
+                  <input class="form-hero-input" type="tel" name="tel" id="tel" />
+                <span class="form-icon"></span>
+                </div>
+                <div class="form-hero-field">
+                  <label for="email" class="form-hero-label">Почта</label>
+                  <input class="form-hero-input" type="email" name="email" id="email">
+                <span class="form-icon"></span>
+                </div>
+                <div class="form-hero-field">
+                  <label for="comment" class="form-hero-label">Комментарий</label>
+                  <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-hero-field">
+                <input class="mark-submit" type="checkbox" name="mark" id="mark" />
+                <label for="mark" class="mark-submit-text">Соглашаюсь с рассылкой и принимаю <a class="mark-submit-enter" href="">Условия договора</a></label>
+                </div>
+                <button class="bnt-hero-form" type="submit">Отправить</button> 
               </form>
             </div>
-            </div>
-          </button></div>
+        </div>
         </div>
         </div>
       </section>
