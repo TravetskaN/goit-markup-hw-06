@@ -276,13 +276,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  height: 23px;
 
   color: #212121;
 }
 .form-hero-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.01em;
@@ -293,6 +294,9 @@ img {
 .form-hero-field:hover {
   color: #2196f3;
   fill: #2196f3;
+}
+.form-hero-field:nth-child(-n + 4) {
+  margin-bottom: 10px;
 }
 
 .form-hero-field:hover .form-hero-input {
@@ -326,13 +330,40 @@ textarea {
 
 .hero-mark {
   flex-direction: row;
+  flex-direction: row;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
+.mark-submit {
+  width: 16px;
+  height: 15px;
+  background: #2196f3;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.mark-submit-check {
+  background: #ffffff;
+  border: 0.2px solid var(--primary-text-color);
+  width: 16px;
+  height: 15px;
+  fill: none;
+}
+
+.mark-submit:checked + .mark-submit-check {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  border: transparent;
+}
+
 .mark-submit-text {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+  margin-left: 9px;
 }
 .mark-submit-enter {
   color: var(--accent-color);
@@ -359,6 +390,7 @@ textarea {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
+  padding: 10px 55px;
 
   color: #ffffff;
 }
@@ -702,6 +734,7 @@ textarea {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 10px 29px;
 }
 
 .bnt-footer:focus,
