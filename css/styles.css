@@ -681,8 +681,6 @@ textarea {
   display: flex;
   text-align: center;
   align-items: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
 }
 .btn-footer {
   height: 50px;
