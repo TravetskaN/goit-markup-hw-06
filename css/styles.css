@@ -269,11 +269,13 @@ img {
   padding: 40px;
 }
 .form-hero-title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15px;
-  text-align: center;
+
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   height: 23px;
@@ -311,6 +313,10 @@ img {
   position: relative;
 }
 
+.form-hero-label {
+  margin-bottom: 4px;
+}
+
 .form-hero-field input::placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -341,6 +347,7 @@ textarea {
   background: #2196f3;
   border-radius: 2px;
   visibility: hidden;
+  margin-right: 9px;
 }
 
 .mark-submit-check {
@@ -349,6 +356,7 @@ textarea {
   width: 16px;
   height: 15px;
   fill: none;
+  position: absolute;
 }
 
 .mark-submit:checked + .mark-submit-check {
@@ -363,7 +371,9 @@ textarea {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
-  margin-left: 9px;
+
+  display: flex;
+  align-items: center;
 }
 .mark-submit-enter {
   color: var(--accent-color);
@@ -371,7 +381,7 @@ textarea {
 
 .form-icon {
   position: absolute;
-  top: 31px;
+  top: 35px;
   bottom: 11px;
   left: 12px;
   height: 18px;
