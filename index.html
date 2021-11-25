@@ -72,51 +72,88 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button"data-modal-open>Заказать услугу</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button data-modal-close>
-            <div class="bnt-styles">
-            <svg class="hero-bnt-close">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-            </div>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
           </button>
-          <div>
-              <form class="form-hero">
-                <h3 class="form-hero-title">Оставьте свои данные, мы вам перезвоним</h3>
-                <div class="form-hero-field">
-                  <label for="user-name" class="form-hero-label">Имя</label>
-                  <input class="form-hero-input" type="text" name="user-name" id="user-name" 
-                  />
-                  <svg class="form-icon">
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="bnt-styles" data-modal-close>
+                <svg class="hero-bnt-close">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div>
+                <form class="form-hero">
+                  <h3 class="form-hero-title">
+                    Оставьте свои данные, мы вам перезвоним
+                  </h3>
+                  <div class="form-hero-field">
+                    <label for="user-name" class="form-hero-label">Имя</label>
+                    <input
+                      class="form-hero-input"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                    />
+                    <svg class="form-icon">
                       <use href="./images/icons.svg#icon-persona"></use>
                     </svg>
-                 
-                </div>
-                <div class="form-hero-field"> 
-                  <label for="tel" class="form-hero-label">Телефон</label>
-                  <input class="form-hero-input" type="tel" name="tel" id="tel" />
-                <span class="form-icon"></span>
-                </div>
-                <div class="form-hero-field">
-                  <label for="email" class="form-hero-label">Почта</label>
-                  <input class="form-hero-input" type="email" name="email" id="email">
-                <span class="form-icon"></span>
-                </div>
-                <div class="form-hero-field">
-                  <label for="comment" class="form-hero-label">Комментарий</label>
-                  <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-                </div>
-                <div class="form-hero-field">
-                <input class="mark-submit" type="checkbox" name="mark" id="mark" />
-                <label for="mark" class="mark-submit-text">Соглашаюсь с рассылкой и принимаю <a class="mark-submit-enter" href="">Условия договора</a></label>
-                </div>
-                <button class="bnt-hero-form" type="submit">Отправить</button> 
-              </form>
+                  </div>
+                  <div class="form-hero-field">
+                    <label for="tel" class="form-hero-label">Телефон</label>
+                    <input
+                      class="form-hero-input"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                    />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                  <div class="form-hero-field">
+                    <label for="email" class="form-hero-label">Почта</label>
+                    <input
+                      class="form-hero-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                    />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-vector"></use>
+                    </svg>
+                  </div>
+                  <div class="form-hero-field">
+                    <label for="comment" class="form-hero-label"
+                      >Комментарий</label
+                    >
+                    <textarea
+                      class="hero-comment"
+                      name="comment"
+                      id="comment"
+                      rows="10"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+                  <div class="form-hero-field hero-mark">
+                    <input
+                      class="mark-submit"
+                      type="checkbox"
+                      name="mark"
+                      id="mark"
+                    />
+                    <label for="mark" class="mark-submit-text"
+                      >Соглашаюсь с рассылкой и принимаю
+                      <a class="mark-submit-enter" href=""
+                        >Условия договора</a
+                      ></label
+                    >
+                  </div>
+                  <button class="bnt-hero-form" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
         </div>
       </section>
       <!--стили работы-->
@@ -179,34 +216,34 @@
         <div class="container">
           <h2 class="direction-work">Чем мы занимаемся</h2>
           <ul class="direction-work-sections">
-            <div class="direction-work-cards">
             <li class="direction-work-photo">
-              <img
-                src="./images/box1.jpg"
-                alt="создание проектов"
-                height="294"
-              />
-              <p class="labels">Десктопные приложения</p>
+              <div class="direction-work-cards">
+                <img
+                  src="./images/box1.jpg"
+                  alt="создание проектов"
+                  height="294"
+                />
+                <p class="labels">Десктопные приложения</p>
               </div>
             </li>
             <li class="direction-work-photo">
               <div class="direction-work-cards">
-              <img
-                src="./images/box2.jpg"
-                alt="розработка приложений"
-                height="294"
-              />
-               <p class="labels">Мобильные приложения</p>
+                <img
+                  src="./images/box2.jpg"
+                  alt="розработка приложений"
+                  height="294"
+                />
+                <p class="labels">Мобильные приложения</p>
               </div>
             </li>
             <li class="direction-work-photo">
               <div class="direction-work-cards">
-              <img
-                src="./images/box3.jpg"
-                alt="оформление интерфейса"
-                height="294"
-              />
-               <p class="labels">Дизайнерские решения</p>
+                <img
+                  src="./images/box3.jpg"
+                  alt="оформление интерфейса"
+                  height="294"
+                />
+                <p class="labels">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -488,6 +525,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-content-pages">
+          <h3 class="footer-web">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <label for="email"></label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+
+            <button class="btn-footer" type="submit">
+              Подписаться
+              <svg class="btn-footer-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
