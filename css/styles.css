@@ -257,8 +257,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-bnt-close:focus,
-.hero-bnt-close:hover {
+.bnt-styles:focus .hero-bnt-close,
+.bnt-styles:hover .hero-bnt-close {
   fill: var(--accent-color);
 }
 
@@ -293,6 +293,7 @@ img {
   text-align: justify;
   position: relative;
 }
+.form-hero-field:hover,
 .form-hero-field:hover {
   color: #2196f3;
   fill: #2196f3;
@@ -301,8 +302,15 @@ img {
   margin-bottom: 10px;
 }
 
-.form-hero-field:hover .form-hero-input {
-  border: 1px solid #2196f3;
+.form-hero-field:focus-within .hero-comment {
+  border: 2px solid #2196f3;
+}
+
+.form-hero-field:focus-within .form-hero-input {
+  border: 2px solid #2196f3;
+}
+.form-hero-field:focus-within .form-icon {
+  fill: #2196f3;
 }
 .form-hero-input {
   padding-left: 42px;
@@ -311,12 +319,15 @@ img {
   border-radius: 4px;
   height: 40px;
   position: relative;
+  outline: none;
 }
 
 .form-hero-label {
   margin-bottom: 4px;
 }
-
+.hero-comment {
+  outline: none;
+}
 .form-hero-field input::placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -341,25 +352,32 @@ textarea {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+
+.mark-submit-check {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 .mark-submit {
   width: 16px;
   height: 15px;
   background: #2196f3;
-  border-radius: 2px;
-  visibility: hidden;
-  margin-right: 9px;
-}
-
-.mark-submit-check {
-  background: #ffffff;
-  border: 0.2px solid var(--primary-text-color);
-  width: 16px;
-  height: 15px;
   fill: none;
-  position: absolute;
+  margin-right: 9px;
+  background-color: var(--primary-bg-color);
+  border: 0.2px solid var(--primary-text-color);
+  border-radius: 2px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mark-submit:checked + .mark-submit-check {
+.mark-submit-check:checked + .mark-submit {
   fill: var(--primary-bg-color);
   background-color: var(--accent-color);
   border: transparent;
@@ -377,6 +395,7 @@ textarea {
 }
 .mark-submit-enter {
   color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .form-icon {
